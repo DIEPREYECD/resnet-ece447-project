@@ -71,6 +71,19 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
+The output PDF is written to `report/main.pdf`.
+
+### CI-compiled PDF
+
+Every push or pull request that touches `report/` automatically compiles the report
+via GitHub Actions.  Once the **Compile LaTeX Report** workflow succeeds you can
+download the compiled PDF from the run's **Artifacts** section:
+
+1. Open the repository on GitHub and click the **Actions** tab.
+2. Select the latest **Compile LaTeX Report** run.
+3. Scroll to the **Artifacts** section at the bottom of the run summary.
+4. Download the **`report-pdf-run123`** zip (where `123` is the run number) — it contains `main.pdf`.
+
 ## Building the Slides
 
 ```bash
